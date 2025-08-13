@@ -1,0 +1,51 @@
+# Core web framework
+streamlit>=1.28.0
+
+# File processing
+PyMuPDF>=1.23.0
+pymupdf>=1.23.0        # PDF text extraction
+pdfplumber>=0.9.0      # Alternative PDF processing
+pytesseract>=0.3.10    # OCR functionality
+Pillow>=10.0.0         # Image processing
+
+# Natural Language Processing
+spacy>=3.7.0           # NLP library
+transformers>=4.35.0   # HuggingFace transformers for AI models
+torch>=2.1.0           # PyTorch backend
+sentence-transformers>=2.2.2  # For embeddings
+
+# Text summarization
+sumy>=0.11.0           # Text summarization
+nltk>=3.8.1            # Natural language toolkit
+
+# Keyword extraction
+keybert>=0.8.0         # BERT-based keyword extraction
+yake>=0.4.8            # YAKE keyword extraction
+rake-nltk>=1.0.6       # RAKE algorithm
+
+# Graph visualization
+networkx>=3.2.1        # Graph creation and analysis
+pyvis>=0.3.2           # Interactive network visualization
+plotly>=5.17.0         # Interactive plotting
+matplotlib>=3.8.0      # Static plotting
+
+# Data processing
+pandas>=2.1.0          # Data manipulation
+numpy>=1.25.0          # Numerical computing
+
+# File handling
+python-docx>=0.8.11    # Word document processing
+openpyxl>=3.1.2        # Excel file handling
+
+# PDF generation for exports
+reportlab>=4.0.0       # PDF generation
+fpdf2>=2.7.0           # Simple PDF creation
+
+# Utility libraries
+requests>=2.31.0       # HTTP requests
+tqdm>=4.66.0           # Progress bars
+python-dotenv>=1.0.0   # Environment variables
+opencv-python>=4.11.0
+
+# Language models (lightweight)
+# Note: Download specific spaCy models with: python -m spacy download en_core_web_sm
