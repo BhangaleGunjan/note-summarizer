@@ -1,29 +1,28 @@
 # 🧠 NeuroNotes
 
-> **AI-powered interactive learning from your notes 	6 summarize, visualize, master.**  
+> **AI-powered interactive learning from your notes summarize, visualize, master.**  
 > Works **fully offline**, free, and open-source.  
-> Extracts text from your notes (PDF, text, or images), generates summaries, keywords, and builds interactive concept maps 	6 including **definition-based maps** for real understanding.
+> Extracts text from your notes (PDF, text, or images), generates summaries, keywords, and builds interactive concept maps including **definition-based maps** for real understanding.
 
 ---
 
-## F680 Features
+## Features
 
-- 4C2 **Upload** PDF, TXT, PNG/JPG, BMP, TIFF.
-- 50D **Extract text** (OCR for images using Tesseract).
-- 4DD **Summarize** (multiple free, local AI models: transformer, extractive, hybrid).
-- 511 **Keyword extraction** (KeyBERT, YAKE, RAKE, spaCy).
-- 4DA **Definition extraction** (	3Concept: Definition	4 for educational maps).
-- 570 **Interactive concept maps** (keyword-based or definition-based).
-- 3AF **Quiz generation** (optional).
-- 4BE Works **completely offline** 	6 no paid APIs.
+- **Upload** PDF, TXT, PNG/JPG, BMP, TIFF.
+- **Extract text** (OCR for images using Tesseract).
+- **Summarize** (multiple free, local AI models: transformer, extractive, hybrid).
+- **Keyword extraction** (KeyBERT, YAKE, RAKE, spaCy).
+- **Definition extraction**
+- **Interactive concept maps** (keyword-based or definition-based).
+- Works **completely offline** 	no paid APIs.
 
 ---
 
-## 4E6 Installation
+## Installation
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/neuronotes.git
+git clone https://github.com/BhangaleGunjan/note-summarizer.git
 cd neuronotes
 ```
 
@@ -32,7 +31,7 @@ cd neuronotes
 # Windows (PowerShell)
 python -m venv neuronotes_env
 .
-euronotes_env\Scriptsctivate
+neuronotes_env\Scripts\activate
 
 # macOS/Linux
 python3 -m venv neuronotes_env
@@ -58,7 +57,7 @@ python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 
 ---
 
-## 4C2 Project Structure
+## Project Structure
 
 ```
 NeuroNotes/
@@ -74,8 +73,6 @@ NeuroNotes/
 │   ├── keyword_extractor.py
 │   ├── concept_definition_extractor.py
 │   ├── concept_mapper.py
-│   ├── quiz_generator.py  # (optional)
-│   └── pdf_exporter.py    # (optional)
 ├── data/
 │   ├── uploads/           # Temporary files
 │   └── exports/           # Generated concept maps, reports
@@ -87,13 +84,12 @@ NeuroNotes/
 
 ---
 
-## 449 Usage Guide
+## Usage Guide
 
 #### 0. Activate Environment
 ```bash
 # Windows
-.
-euronotes_env\Scriptsctivate
+neuronotes_env\Scripts\activate
 # macOS/Linux
 source neuronotes_env/bin/activate
 ```
@@ -105,76 +101,54 @@ streamlit run main.py
 
 #### 2. Upload a Document
 - PDF, TXT, PNG/JPG/BMP/TIFF images, or Markdown.
-- Click **680 Analyze** after upload.
+- Click **Analyze** after upload.
 
 #### 3. Explore Results
 - **Summary Tab:** AI-generated notes, original text expander, method/length metrics.
 - **Keywords Tab:** Table/List view; optionally compare extraction algorithms.
-- **Concept Map Tab:** Drag/zoom; download map as HTML. If using 	3Definition Map,	4 hover nodes for definition popups.
-- **Analytics Tab:** Stats	6word count, central nodes, keyword relationships.
+- **Concept Map Tab:** Drag/zoom; download map as HTML. If using Definition Map, hover nodes for definition popups.
+- **Analytics Tab:** Stats word count, central nodes, keyword relationships.
 - **Export Tab:** Download JSON/CSV reports, saved maps.
 
 #### 4. Settings & Customization
 
 In sidebar:
 - Choose summarization and keyword extraction methods.
-- Optionally toggle between 	3Keyword	4 and 	3Definition	4 concept map modes.
+- Optionally toggle between Keyword and Definition - concept map modes.
 - Advanced: Show process steps; enable quiz generator (if implemented).
 
 ---
 
-## 4D6 Key Components
+## Key Components
 
 - **File Handler:** Handles file uploads, saving, cleaning up.
 - **Text Extractor:** Uses PyMuPDF/pdfplumber/pytesseract/Pillow/OpenCV for robust text extraction.
 - **Summarizer:** Selects between transformer models, extractive summarizers, hybrid approaches.
 - **Keyword Extractor:** Fuses KeyBERT, YAKE, RAKE, spaCy for semantic/statistical extraction.
-- **Concept Definition Extractor:** Scans text for definition patterns (e.g. 	1inux is an operating system.	2, 	1ython: programming language	2).
+- **Concept Definition Extractor:** Scans text for definition patterns (e.g. Linux is an operating system. Python: programming language).
 - **Concept Mapper:** Visualizes concepts as nodes; definitions as tooltips/labels; connections via inter-concept references.
 
 ---
 
-## 4E6 Advanced Features
+## Advanced Features
 
 - **Definition-based Mapping:** See definitions as hover-text or beside nodes.
-- **Quiz Generator:** Automatically creates MCQs from content/concepts.
+- **Quiz Generator:** Automatically creates MCQs from content/concepts. (Under development)
 - **PDF/CSV/JSON Export:** Download everything for offline use or sharing.
 - **Custom Templates:** Improve concept map visuals by customizing Pyvis HTML template.
 - **Fast Error Handling:** Clear UI feedback for common import/OCR/model errors.
 
 ---
 
-## 6E0 Troubleshooting
+## License
 
-| Problem                        | Solution |
-|--------------------------------|----------|
-| **Blank UI:** See README for `__init__.py` and import path fixes; ensure all dependencies in requirements.txt are installed. |
-| **Module Import Errors:** See installation instructions above for Tesseract/unusual packages. |
-| **PyMuPDF/cv2 Import:** Confirm installed in active venv: `pip install pymupdf opencv-python` |
-| **spaCy model Missing:** Run `python -m spacy download en_core_web_sm` |
-| **Tesseract not Found:** Install Tesseract binary and update path in `text_extractor.py` if needed. |
-| **Concept Map Misbehavior:** Lower number of keywords, try definition-based map, check for updates. |
+Licensed under the **MIT License** free to use, modify, and distribute.
 
 ---
 
-## 4C4 License
+## Credits
 
-Licensed under the **MIT License** 	6 free to use, modify, and distribute.
-
----
-
-## 64F Credits
-
-Developed by [Your Name] with guidance from Perplexity AI.
+Developed by Gunjan Bhangale.
 Core libraries: Streamlit, PyMuPDF, pdfplumber, pytesseract, spaCy, sumy, transformers, KeyBERT, yake, rake-nltk, NetworkX, Pyvis, Pillow, OpenCV.
 
 ---
-
-## 4D1 docs/EXTENDED_DOC.md (Optional)
-
-For your extended docs folder, create an EXTENDED_DOC.md with:
-- Technical specs & pipeline details
-- Developer guide
-- IPR information
-- Future feature ideas
-
